@@ -12,6 +12,7 @@
     }
 
     $q = "%{$_GET['q']}%";
+    $r = "{$_GET['q']}%";
 
     $db = new mysqli("localhost","root",'','medicare');
     
@@ -24,8 +25,9 @@
         from 
                 patient_master 
         where 
-                patient_names 
-        like '$q'
+                patient_names like '$q'
+        or 
+                patient_code like '$r'
         
         ");
     

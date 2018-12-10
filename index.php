@@ -21,7 +21,7 @@ if( ! empty($_POST))
     <?php for($x=1;$x<4;$x++){ ?>
     <div class='m-3'>
         
-        <input class='seo form-control' type="text"  id="search-<?=$x?>" >
+        <input class='seo' type="text"  id="search-<?=$x?>" >
         
         <input type="hidden" id="inputsearch-<?=$x?>" name="search-<?=$x?>">
 
